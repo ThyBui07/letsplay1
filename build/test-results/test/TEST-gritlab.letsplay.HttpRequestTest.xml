@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="gritlab.letsplay.HttpRequestTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-11T12:26:17" hostname="MacBook-Pro" time="0.559">
+<testsuite name="gritlab.letsplay.HttpRequestTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-19T21:18:46" hostname="MacBook-Pro" time="0.613">
   <properties/>
-  <testcase name="testGetProductsEndpoint()" classname="gritlab.letsplay.HttpRequestTest" time="0.556"/>
+  <testcase name="testGetProductsEndpoint()" classname="gritlab.letsplay.HttpRequestTest" time="0.61"/>
   <testcase name="contextLoads()" classname="gritlab.letsplay.HttpRequestTest" time="0.002"/>
-  <system-out><![CDATA[14:26:16.371 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [gritlab.letsplay.HttpRequestTest]: HttpRequestTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-14:26:16.411 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration gritlab.letsplay.LetsplayApplication for test class gritlab.letsplay.HttpRequestTest
+  <system-out><![CDATA[23:18:44.618 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [gritlab.letsplay.HttpRequestTest]: HttpRequestTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:18:44.666 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration gritlab.letsplay.LetsplayApplication for test class gritlab.letsplay.HttpRequestTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -14,40 +14,40 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.5)
 
-2023-11-11T14:26:16.571+02:00  INFO 37139 --- [    Test worker] gritlab.letsplay.HttpRequestTest         : Starting HttpRequestTest using Java 20.0.2.1 with PID 37139 (started by gin in /Users/gin/Documents/code/letsplay)
-2023-11-11T14:26:16.572+02:00  INFO 37139 --- [    Test worker] gritlab.letsplay.HttpRequestTest         : No active profile set, falling back to 1 default profile: "default"
-2023-11-11T14:26:16.808+02:00  INFO 37139 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2023-11-11T14:26:16.829+02:00  INFO 37139 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 MongoDB repository interfaces.
-2023-11-11T14:26:17.050+02:00  INFO 37139 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-11-11T14:26:17.054+02:00  INFO 37139 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-11-11T14:26:17.054+02:00  INFO 37139 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
-2023-11-11T14:26:17.097+02:00  INFO 37139 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-11-11T14:26:17.098+02:00  INFO 37139 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 518 ms
-2023-11-11T14:26:17.178+02:00  INFO 37139 --- [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "12.3"}, "platform": "Java/Amazon.com Inc./20.0.2.1+10-FR"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@2b6fb197, com.mongodb.Jep395RecordCodecProvider@2eb0cefe]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
-2023-11-11T14:26:17.224+02:00  INFO 37139 --- [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=42265667}
-2023-11-11T14:26:17.662+02:00  WARN 37139 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+2023-11-19T23:18:44.855+02:00  INFO 69653 --- [    Test worker] gritlab.letsplay.HttpRequestTest         : Starting HttpRequestTest using Java 20.0.2.1 with PID 69653 (started by gin in /Users/gin/Documents/code/letsplay1)
+2023-11-19T23:18:44.856+02:00  INFO 69653 --- [    Test worker] gritlab.letsplay.HttpRequestTest         : No active profile set, falling back to 1 default profile: "default"
+2023-11-19T23:18:45.135+02:00  INFO 69653 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-11-19T23:18:45.160+02:00  INFO 69653 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 MongoDB repository interfaces.
+2023-11-19T23:18:45.419+02:00  INFO 69653 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-11-19T23:18:45.425+02:00  INFO 69653 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-19T23:18:45.425+02:00  INFO 69653 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-19T23:18:45.475+02:00  INFO 69653 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-19T23:18:45.476+02:00  INFO 69653 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 610 ms
+2023-11-19T23:18:45.572+02:00  INFO 69653 --- [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "12.3"}, "platform": "Java/Amazon.com Inc./20.0.2.1+10-FR"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@19b5214b, com.mongodb.Jep395RecordCodecProvider@5fb3111a]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-11-19T23:18:45.587+02:00  INFO 69653 --- [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=10538000}
+2023-11-19T23:18:45.809+02:00  WARN 69653 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 82d2f964-4bbc-4659-9fd0-182a725fe5f4
+Using generated security password: f89bef2f-14f8-45f1-8949-4401616479d7
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
 WebSecurityConfig is running...
-2023-11-11T14:26:17.773+02:00  INFO 37139 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c4551c6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a3316b6, org.springframework.security.web.context.SecurityContextHolderFilter@23d0944b, org.springframework.security.web.header.HeaderWriterFilter@fbbd90c, org.springframework.security.web.csrf.CsrfFilter@4eac65db, org.springframework.security.web.authentication.logout.LogoutFilter@5eb2972f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49d543a9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@492c9892, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4db46344, org.springframework.security.web.access.ExceptionTranslationFilter@45e639ee, org.springframework.security.web.access.intercept.AuthorizationFilter@2d73767e]
-2023-11-11T14:26:17.870+02:00  INFO 37139 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56576 (http) with context path ''
-2023-11-11T14:26:17.875+02:00  INFO 37139 --- [    Test worker] gritlab.letsplay.HttpRequestTest         : Started HttpRequestTest in 1.408 seconds (process running for 1.862)
+2023-11-19T23:18:45.945+02:00  INFO 69653 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@76dc36e5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a54c92e, org.springframework.security.web.context.SecurityContextHolderFilter@dde6f87, org.springframework.security.web.header.HeaderWriterFilter@261a66b8, org.springframework.security.web.csrf.CsrfFilter@5788722f, org.springframework.security.web.authentication.logout.LogoutFilter@3caa4d85, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16029e2f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@186295cc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31533eb1, org.springframework.security.web.access.ExceptionTranslationFilter@5342eec5, org.springframework.security.web.access.intercept.AuthorizationFilter@343d1d25]
+2023-11-19T23:18:46.043+02:00  INFO 69653 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 53841 (http) with context path ''
+2023-11-19T23:18:46.048+02:00  INFO 69653 --- [    Test worker] gritlab.letsplay.HttpRequestTest         : Started HttpRequestTest in 1.32 seconds (process running for 1.859)
 Let's inspect the beans provided by Spring Boot:
 applicationAvailability
 applicationTaskExecutor
 authController
 authenticationEventPublisher
 authenticationManagerBuilder
-basicErrorController
 beanNameHandlerMapping
 beanNameViewResolver
 characterEncodingFilter
 commandLineRunner
 conventionErrorViewResolver
 conversionServicePostProcessor
+customErrorController
 data-mongo.repository-aot-processor#0
 defaultServletHandlerMapping
 defaultTemplateResolver
@@ -257,6 +257,7 @@ tomcatWebServerFactoryCustomizer
 userController
 userRepository
 userSeeder
+userService
 viewControllerHandlerMapping
 viewNameTranslator
 viewResolver
@@ -267,9 +268,12 @@ webServerFactoryCustomizerBeanPostProcessor
 websocketServletWebServerCustomizer
 welcomePageHandlerMapping
 welcomePageNotAcceptableHandlerMapping
-2023-11-11T14:26:18.362+02:00  INFO 37139 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-11-11T14:26:18.362+02:00  INFO 37139 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-11-11T14:26:18.362+02:00  INFO 37139 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-11-19T23:18:46.572+02:00  INFO 69653 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-19T23:18:46.572+02:00  INFO 69653 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-19T23:18:46.573+02:00  INFO 69653 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-11-19T23:18:46.576+02:00 DEBUG 69653 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /products/all
+2023-11-19T23:18:46.582+02:00 DEBUG 69653 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /products/all
+2023-11-19T23:18:46.620+02:00 DEBUG 69653 --- [o-auto-1-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
 HttpRequestTest is running...
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
