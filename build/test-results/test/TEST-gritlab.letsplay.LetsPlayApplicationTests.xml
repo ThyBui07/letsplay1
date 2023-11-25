@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="gritlab.letsplay.LetsPlayApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-19T21:18:46" hostname="MacBook-Pro" time="0.0">
+<testsuite name="gritlab.letsplay.LetsPlayApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-25T23:36:54" hostname="MacBook-Pro" time="0.006">
   <properties/>
-  <testcase name="contextLoads()" classname="gritlab.letsplay.LetsPlayApplicationTests" time="0.0"/>
+  <testcase name="contextLoads()" classname="gritlab.letsplay.LetsPlayApplicationTests" time="0.006"/>
   <system-out><![CDATA[LetsPlayApplicationTests is running...
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
